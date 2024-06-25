@@ -14,7 +14,7 @@ export const styles = StyleSheet.create({
   },
   input: {
     height: 40,
-    borderColor: "gray",
+    borderColor: theme.colors.gray_400,
     borderWidth: 1,
     borderRadius: theme.borderRadius.md,
     paddingHorizontal: 8,
@@ -28,14 +28,25 @@ export const styles = StyleSheet.create({
     borderRadius: theme.borderRadius.md,
   },
   errorText: {
-    color: "red",
+    color: theme.colors.red,
     marginBottom: 12,
+    fontSize: theme.fonts.size.body.xs,
   },
   text: {
     fontSize: theme.fonts.size.body.md,
     fontFamily: theme.fonts.family.regular,
     color: theme.colors.gray_400,
+    marginBottom: 12,
+  },
+  versusButton: {
+    backgroundColor: theme.colors.gray_200,
+    borderWidth: 1,
+    borderColor: theme.colors.black,
+    borderRadius: theme.borderRadius.full,
+    padding: 8,
+    width: 52,
+    alignSelf: "center",
     marginTop: 12,
-    marginBottom: 38,
+    marginBottom: 12,
   },
 });
